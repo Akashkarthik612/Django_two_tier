@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  shopping:
+    build: ./shopping_service
+    ports:
+      - "8001:8000"
+  cart:
+    build: ./cart_service
+    ports:
+      - "8002:8000"
+  payment:
+    build: ./payment_service
+    ports:
+      - "8003:8000"
